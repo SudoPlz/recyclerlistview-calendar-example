@@ -76,6 +76,7 @@ export default class App extends Component<Props> {
       monthTitle: '',
     };
     Orientation.addOrientationListener((orientation) => {
+      console.log(`new orientation: ${orientation}`)
       this.onOrientationChange(orientation);
     });
   }
